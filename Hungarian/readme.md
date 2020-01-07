@@ -1,4 +1,4 @@
-# PCTool - Windows kliens
+# **PCTool - Windows kliens**
 > Egy olyan számítógépes eszköz mely sok olyan funkciót is tartalmaz, amelyet telefonon keresztül irányíthatunk az ehhez készült alkalmazással *TODO: LINK*. 
 
 ## Telepítés
@@ -39,7 +39,8 @@ TODO: Mozgó kép a port engedélyezéshez
 7. Saját művelet *(A program saját művelet szerkesztőjével készítve)*
     * Adott futtatható fájl futtatása *(Tallózással választva)*
     * Adott folyamat leállítása *(Feladatkezelőből választott)*
-    * Makró lejátszása
+    * Rendszer hang állítása
+    * Egy adott (futó) hang állítása TODO: Lehetséges ?
 
 ### Távirányíthatóság
 
