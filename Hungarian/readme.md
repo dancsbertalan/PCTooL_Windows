@@ -4,7 +4,7 @@
 ## Telepítés
 ************
 
-Letöltöd a **PCTool.exe**-t a master branchről. A telepítő utasításaid követve felrakod.
+Letöltöd a **PCTool.exe**-t a master branchről. *(TODO: Vagy erről a linkről)* A telepítő utasításaid követve felrakod.
 
 ### A port engedélyezése
 > Ahhoz, hogy a program tudjon kommunikálni a telefonos alkalmazással szükséges engedélyezni a *7171* portot a Windows tűzfalban. *Vagy azt kikapcsolni, bár ezt nem javaslom.*
@@ -40,7 +40,10 @@ TODO: Mozgó kép a port engedélyezéshez
     * Adott futtatható fájl futtatása *(Tallózással választva)*
     * Adott folyamat leállítása *(Feladatkezelőből választott)*
     * Rendszer hang állítása
-    * Egy adott (futó) hang állítása TODO: Lehetséges ?
+    * Egy adott alkalmazás hangjának az állítása 
+
+A program képes értesítést küldeni (TODO: W10 only ?) a következő műveletről, amennyiben a Fájl - Beállítások - **Értesítés küldése** funkció be van pipálva.
+1 perccel és 5 perccel a művelet bekövetkezte előtt küld arról egy értesítőt, amennyiben a művelet hosszabb 1 vagy 5 percnél.
 
 ### Távirányíthatóság
 
@@ -48,10 +51,11 @@ Ahhoz, hogy a program távirányítható legyen az alábbiak szükségesek:
 
 * **Rendszergazdaként futtatni a programot** *(Jobb klikk - futtatás rendszergazdaként, vagy beállítani, hogy mindig rendszergazdaként futtassuk: Jobb klikk - Tulajdonságok - Kompatibilitás - Program futtatása rendszergazdaként opció kipipálása majd alkalmazása)*
 * **Ugyanazon a hálózathoz** *(internet nem szükséges)* **legyen csatlakoztatva a két eszköz**
-* Fájl - Beállítások - **Távirányíthatóság funkció ki legyen pipálva** a kliensben 
+* Fájl - Beállítások - Távirányító - **Távirányíthatóság funkció ki legyen pipálva** a kliensben
 
-Amennyiben több hálózathoz is csatlakoztatva vagyunk akkor egy felugró ablakban választhatjuk ki, hogy melyik címen szeretnénk elérhetővé tenni a gépünket.
-Amint engedélyezve van a menüsorban láthatjuk az IP címet amelyiken keresztül majd elérhetjük a telefonos alkalmazásban.
+    > Amint engedélyezzük a távirányíthatóságot két helyzetet különböztetünk meg:
+    > 1. Amennyiben 1 hálózatra vagyunk csak csatlakozva akkor a menüsor jobb oldalán megjelenik az IP cím amelyen keresztül leszünk elérhetőek.
+    > 2. Amennyiben több hálózatra vagyunk csatlakozva a gépünkkel megjelenik egy ablak ahol kiválaszthatjuk azt a címet melyen szeretnénk elérhetővé tenni a gépünket. 
 
 #### Távirányíthatóság funkciói 
 TODO: API hívások
@@ -60,22 +64,28 @@ TODO: API hívások
 * Jelenleg futó művelet leállítása
 * Jelenleg futó műveletek listázása
 * A jelenleg futó folyamatok lekérése *(feladatkezelő)*
+    * Adott folyamat leállítása (realtime módon - nem időzett)
+        >Fájl - Beállítások - Távirányító - **Feladdatkezelő küldése** menüpontban állítható.
+* A rendszer hang realtime módon való irányítása
+    >Fájl - Beállítások - Távirányító - **Rendszerhang küldése** menüpontban állítható.
 
 ### Saját művelet készítése
-
-A programban saját műveleteket is definiálhatunk. Ezeknek 2 típusa lehet:
-* Adott futtatható fájl futtatása 
-* Adott folyamat leállítása
+A programban saját műveleteket is definiálhatunk. Az ehhez szükséges gombot a *Futtatható műveletek* lista legalján találjuk meg egy + jel formájában.
+Felugró ablakban adunk neki egy nevet, majd egy típust az alábbiak közül:
 
 #### Adott futtatható fájl futtatása
-
 Kiválasztunk tallózással egy futtatható fájlt a gépünkról. TODO: Melyik futtatható típusokat támogatjuk ? Mi a helyzet a speciális fájlokkal .jar, .reg ... stb ? 
 
 #### Adott folyamat leállítása
+Kiválasztunk a listából egy folyamatot amelyiket le szeretnénk állítani. Ezek a folyamatok megegyeznek a feladatkezelő folyamatival.
+>Fontos, hogy ilyenkor a program a folyamat nevét tárolja, nem a folyamatazonosítóját, ugyanis az minden indításkor más számot kap.
 
-Kiválasztunk a listából egy folyamatot amelyiket le szeretnénk állítani. Ezek a folyamatok megegyeznek a feladatkezelő folyamatival, hiszen onnan kapjuk azt a listát amelyik csak a felhasználói folyamatokat tartalmazza.
+#### Rendszer hang állítása
+Egy sliderrel megadhatjuk, hogy mennyire állítsa majd a rendszer hangerejét.
 
-Továbbá nevet is adunk egy saját műveletnek, annak érdekében, hogy *Futtatható műveletek* listájában átláthatóan találjuk azt meg.
+#### Egy adott alkalmazás hangjának az állítása 
+Egy sliderrel megadjuk, hogy mennyire állítsa majd az adott programnak a hangját.
+A programot pedig a listábol választhatjuk ki, hasonló elv alapján működve mint az *Adott folyamat leállítása* funkciónál volt leírva.
 
 ## Készítők
 ************
