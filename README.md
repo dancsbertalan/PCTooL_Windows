@@ -4,7 +4,7 @@
 ## Telepítés
 ************
 
-Letöltöd a **PCTool.exe**-t a master branchről. *(TODO: Vagy erről a linkről)* A telepítő utasításaid követve felrakod.
+Letöltöd a **PCTool.exe**-t az **installer** branchről. *(TODO: Vagy erről a linkről)* A telepítő utasításaid követve felrakod.
 
 ### A port engedélyezése
 > Ahhoz, hogy a program tudjon kommunikálni a telefonos alkalmazással szükséges engedélyezni a *7171* portot a Windows tűzfalban. *Vagy azt kikapcsolni, bár ezt nem javaslom.*
