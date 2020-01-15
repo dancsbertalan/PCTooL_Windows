@@ -73,8 +73,8 @@ TODO: API hívások
 A programban saját műveleteket is definiálhatunk. Az ehhez szükséges gombot a *Futtatható műveletek* lista legalján találjuk meg egy + jel formájában.
 Felugró ablakban adunk neki egy nevet, majd egy típust az alábbiak közül:
 
-#### Adott futtatható fájl futtatása
-Kiválasztunk tallózással egy futtatható fájlt a gépünkról. TODO: Melyik futtatható típusokat támogatjuk ? Mi a helyzet a speciális fájlokkal .jar, .reg ... stb ? 
+#### Adott fájl futtatása
+Tallózással kiválasztunk egy fájlt, melyet a program megnyit amennyiben a fájlhoz van társítva kezelő program.
 
 #### Adott folyamat leállítása
 Kiválasztunk a listából egy folyamatot amelyiket le szeretnénk állítani. Ezek a folyamatok megegyeznek a feladatkezelő folyamatival.
