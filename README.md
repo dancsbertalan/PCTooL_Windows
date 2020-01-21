@@ -20,7 +20,7 @@ Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak s
     4. Profil opcionálisan állítható
     5. Név: Amit Te szeretnél, átlathatóság kedvéért: PCTool *(Amennyiben a telepítő sikeresen hozzá adta a portot a listához ezen a néven találod meg!)*
 
-TODO: Mozgó kép a port engedélyezéshez
+![](Firewall_HU.gif)
 
 > Amennyiben használsz más fajta tűzfalat is elképzelhető, hogy ott is át kell engedni a portot. Akár még a programot is !
 
@@ -86,6 +86,12 @@ Egy sliderrel megadhatjuk, hogy mennyire állítsa majd a rendszer hangerejét.
 #### Egy adott alkalmazás hangjának az állítása 
 Egy sliderrel megadjuk, hogy mennyire állítsa majd az adott programnak a hangját.
 A programot pedig a listábol választhatjuk ki, hasonló elv alapján működve mint az *Adott folyamat leállítása* funkciónál volt leírva.
+
+## Fejlesztéshez használt programok
+* GIMP
+* Visual Studio Community 2019
+* Visual Studio Code
+* SourceTree
 
 ## Készítők
 ************

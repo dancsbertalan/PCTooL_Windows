@@ -20,7 +20,7 @@ Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak s
     4. Profil opcionálisan állítható
     5. Név: Amit Te szeretnél, átlathatóság kedvéért: PCTool *(Amennyiben a telepítő sikeresen hozzá adta a portot a listához ezen a néven találod meg!)*
 
-TODO: Mozgó kép a port engedélyezéshez
+![](Firewall_HU.gif)
 
 > Amennyiben használsz más fajta tűzfalat is elképzelhető, hogy ott is át kell engedni a portot. Akár még a programot is !
 
