@@ -39,7 +39,7 @@ Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak s
 7. Saját művelet *(A program saját művelet szerkesztőjével készítve)*
     * Adott futtatható fájl futtatása *(Tallózással választva)*
     * Adott folyamat leállítása *(Feladatkezelőből választott)*
-    * Rendszer hang állítása
+    * Az alapértelmezett hangeszköz hangerejének változtatása
     * Egy adott alkalmazás hangjának az állítása 
 
 A program képes értesítést küldeni (TODO: W10 only ?) a következő műveletről, amennyiben a Fájl - Beállítások - **Értesítés küldése** funkció be van pipálva.
