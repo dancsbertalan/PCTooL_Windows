@@ -43,7 +43,9 @@ Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak s
     * Egy adott alkalmazás hangjának az állítása 
 
 A program képes értesítést küldeni (TODO: W10 only ?) a következő műveletről, amennyiben a Fájl - Beállítások - **Értesítés küldése** funkció be van pipálva.
-1 perccel és 5 perccel a művelet bekövetkezte előtt küld arról egy értesítőt, amennyiben a művelet hosszabb 1 vagy 5 percnél.
+Küld egy értesítés ha hátralevő idő:
+* 5 perc
+* 1 perc
 
 ### Távirányíthatóság
 

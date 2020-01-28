@@ -43,7 +43,9 @@ Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak s
     * Egy adott alkalmazás hangjának az állítása 
 
 A program képes értesítést küldeni (TODO: W10 only ?) a következő műveletről, amennyiben a Fájl - Beállítások - **Értesítés küldése** funkció be van pipálva.
-1 perccel és 5 perccel a művelet bekövetkezte előtt küld arról egy értesítőt, amennyiben a művelet hosszabb 1 vagy 5 percnél.
+Küld egy értesítés ha hátralevő idő:
+* 5 perc
+* 1 perc
 
 ### Távirányíthatóság
 
@@ -59,15 +61,19 @@ Ahhoz, hogy a program távirányítható legyen az alábbiak szükségesek:
 
 #### Távirányíthatóság funkciói 
 TODO: API hívások
+
 * Adott végrehajtható műveletek listázása
 * Végrehajtható művelet indítása
 * Jelenleg futó művelet leállítása
 * Jelenleg futó műveletek listázása
 * A jelenleg futó folyamatok lekérése *(feladatkezelő)*
     * Adott folyamat leállítása (realtime módon - nem időzett)
-        >Fájl - Beállítások - Távirányító - **Feladdatkezelő küldése** menüpontban állítható.
+    
+        > Fájl - Beállítások - Távirányító - **Feladdatkezelő küldése** menüpontban állítható.   
+        
 * A rendszer hang realtime módon való irányítása
-    >Fájl - Beállítások - Távirányító - **Rendszerhang küldése** menüpontban állítható.
+
+    > Fájl - Beállítások - Távirányító - **Rendszerhang küldése** menüpontban állítható.
 
 ### Saját művelet készítése
 A programban saját műveleteket is definiálhatunk. Az ehhez szükséges gombot a *Futtatható műveletek* lista legalján találjuk meg egy + jel formájában.
@@ -86,6 +92,12 @@ Egy sliderrel megadhatjuk, hogy mennyire állítsa majd a rendszer hangerejét.
 #### Egy adott alkalmazás hangjának az állítása 
 Egy sliderrel megadjuk, hogy mennyire állítsa majd az adott programnak a hangját.
 A programot pedig a listábol választhatjuk ki, hasonló elv alapján működve mint az *Adott folyamat leállítása* funkciónál volt leírva.
+
+## Fejlesztéshez használt programok
+* GIMP
+* Visual Studio Community 2019
+* Visual Studio Code
+* SourceTree
 
 ## Készítők
 ************
