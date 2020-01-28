@@ -59,15 +59,19 @@ Ahhoz, hogy a program távirányítható legyen az alábbiak szükségesek:
 
 #### Távirányíthatóság funkciói 
 TODO: API hívások
+
 * Adott végrehajtható műveletek listázása
 * Végrehajtható művelet indítása
 * Jelenleg futó művelet leállítása
 * Jelenleg futó műveletek listázása
 * A jelenleg futó folyamatok lekérése *(feladatkezelő)*
     * Adott folyamat leállítása (realtime módon - nem időzett)
-        >Fájl - Beállítások - Távirányító - **Feladdatkezelő küldése** menüpontban állítható.
+    
+        > Fájl - Beállítások - Távirányító - **Feladdatkezelő küldése** menüpontban állítható.   
+        
 * A rendszer hang realtime módon való irányítása
-    >Fájl - Beállítások - Távirányító - **Rendszerhang küldése** menüpontban állítható.
+
+    > Fájl - Beállítások - Távirányító - **Rendszerhang küldése** menüpontban állítható.
 
 ### Saját művelet készítése
 A programban saját műveleteket is definiálhatunk. Az ehhez szükséges gombot a *Futtatható műveletek* lista legalján találjuk meg egy + jel formájában.
