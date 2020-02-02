@@ -35,14 +35,15 @@ Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak s
 3. Alvás
 4. Lezárás
 5. Hibernálás *(Ha a gépeden engedélyezett!)*
+    > Fájl - Beállítások - Hibernate menüpontban ki/be kacsolható
 6. Kijelentkezés
-7. Saját művelet *(A program saját művelet szerkesztőjével készítve)*
+7. Saját művelet
     * Adott futtatható fájl futtatása *(Tallózással választva)*
     * Adott folyamat leállítása *(Feladatkezelőből választott)*
     * Az alapértelmezett hangeszköz hangerejének változtatása
     * Egy adott alkalmazás hangjának az állítása 
 
-A program képes értesítést küldeni (TODO: W10 only ?) a következő műveletről, amennyiben a Fájl - Beállítások - **Értesítés küldése** funkció be van pipálva.
+A program képes értesítést küldeni a következő műveletről. Ez a windows beállításaiban ki/be kapcsolható.
 Küld egy értesítés ha hátralevő idő:
 * 5 perc
 * 1 perc
@@ -52,6 +53,7 @@ Küld egy értesítés ha hátralevő idő:
 Ahhoz, hogy a program távirányítható legyen az alábbiak szükségesek:
 
 * **Rendszergazdaként futtatni a programot** *(Jobb klikk - futtatás rendszergazdaként, vagy beállítani, hogy mindig rendszergazdaként futtassuk: Jobb klikk - Tulajdonságok - Kompatibilitás - Program futtatása rendszergazdaként opció kipipálása majd alkalmazása)*
+Vagy bekapcsolható a Fájl - Beállítások - Rendszergadaként való futtatás menüpont alatt.
 * **Ugyanazon a hálózathoz** *(internet nem szükséges)* **legyen csatlakoztatva a két eszköz**
 * Fájl - Beállítások - Távirányító - **Távirányíthatóság funkció ki legyen pipálva** a kliensben
 
@@ -71,9 +73,9 @@ TODO: API hívások
     
         > Fájl - Beállítások - Távirányító - **Feladdatkezelő küldése** menüpontban állítható.   
         
-* A rendszer hang realtime módon való irányítása
+* Az alapértelmezett hangeszköz hangerejének állítása, realtime (nem időzített) módon
 
-    > Fájl - Beállítások - Távirányító - **Rendszerhang küldése** menüpontban állítható.
+    > Fájl - Beállítások - Távirányító - **Alapértelmezett hangeszköz küldése** menüpontban állítható.
 
 ### Saját művelet készítése
 A programban saját műveleteket is definiálhatunk. Az ehhez szükséges gombot a *Futtatható műveletek* lista legalján találjuk meg egy + jel formájában.
@@ -86,8 +88,8 @@ Tallózással kiválasztunk egy fájlt, melyet a program megnyit amennyiben a f�
 Kiválasztunk a listából egy folyamatot amelyiket le szeretnénk állítani. Ezek a folyamatok megegyeznek a feladatkezelő folyamatival.
 >Fontos, hogy ilyenkor a program a folyamat nevét tárolja, nem a folyamatazonosítóját, ugyanis az minden indításkor más számot kap.
 
-#### Rendszer hang állítása
-Egy sliderrel megadhatjuk, hogy mennyire állítsa majd a rendszer hangerejét.
+#### Alapértelmezett hangeszköz hangerejének állítása
+Egy sliderrel megadhatjuk, hogy mennyire állítsa majd az alapértelmezett hangeszköz hangerejét.
 
 #### Egy adott alkalmazás hangjának az állítása 
 Egy sliderrel megadjuk, hogy mennyire állítsa majd az adott programnak a hangját.
