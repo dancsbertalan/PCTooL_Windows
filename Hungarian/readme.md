@@ -35,7 +35,7 @@ Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak s
 3. Alvás
 4. Lezárás
 5. Hibernálás *(Ha a gépeden engedélyezett!)*
-    > Fájl - Beállítások - Hibernate menüpontban ki/be kacsolható
+    > Fájl - Beállítások - Hibernálás menüpontban ki/be kacsolható
 6. Kijelentkezés
 7. Saját művelet
     * Adott futtatható fájl futtatása *(Tallózással választva)*
@@ -71,11 +71,11 @@ TODO: API hívások
 * A jelenleg futó folyamatok lekérése *(feladatkezelő)*
     * Adott folyamat leállítása (realtime módon - nem időzett)
     
-        > Fájl - Beállítások - Távirányító - **Feladdatkezelő küldése** menüpontban állítható.   
+        > Fájl - Beállítások - **Feladatkezelő küldése** menüpontban állítható.   
         
 * Az alapértelmezett hangeszköz hangerejének állítása, realtime (nem időzített) módon
 
-    > Fájl - Beállítások - Távirányító - **Alapértelmezett hangeszköz küldése** menüpontban állítható.
+    > Fájl - Beállítások - **Alapértelmezett hangeszköz küldése** menüpontban állítható.
 
 ### Saját művelet készítése
 A programban saját műveleteket is definiálhatunk. Az ehhez szükséges gombot a *Futtatható műveletek* lista legalján találjuk meg egy + jel formájában.
@@ -95,11 +95,25 @@ Egy sliderrel megadhatjuk, hogy mennyire állítsa majd az alapértelmezett hang
 Egy sliderrel megadjuk, hogy mennyire állítsa majd az adott programnak a hangját.
 A programot pedig a listábol választhatjuk ki, hasonló elv alapján működve mint az *Adott folyamat leállítása* funkciónál volt leírva.
 
-## Fejlesztéshez használt programok
-* GIMP
-* Visual Studio Community 2019
-* Visual Studio Code
-* SourceTree
+### Egyéb
+* A tálcán megjelenő ikonra való minimializálás az exit gombbal be/ki kapcsolható
+    > Fájl - Beállítások - Minimializálás a tálcára az exittel
+* Több nyelvűség támogatása
+    > Fájl - Beállítások - Nyelv menü pont alatt látható nyelvekkel *(kezdetben angol és magyar)*
+* Hibabejelentés küldhető
+    > Fájl - Súgó - Hiba bejelentés menü alatt két pont közül választhatunk:
+        1. Autómatikus: Csak a log tartalmát küldi el.
+        2. Egyéni: Mi magunk írhatjuk meg mit tapasztaltunk. Ilyenkor nem mellékeli a logot.
+
+## Fejlesztéshez használt programok, kiegészítők
+* [GIMP](https://www.gimp.org/) for used pictures
+* [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/) for c# WPF coding
+    * [Dynamic Localization](https://stackoverflow.com/questions/50292087/dynamic-localized-wpf-application-with-resource-files/50292715)
+* [Visual Studio Code](https://code.visualstudio.com/) for readme files
+    * [TODO Highlight extension](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+    * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+* [SourceTree](https://www.sourcetreeapp.com/) for git repo
+* [Trello](https://trello.com/) for project management
 
 ## Készítők
 ************
