@@ -104,6 +104,8 @@ A programot pedig a listábol választhatjuk ki, hasonló elv alapján működve
     > Fájl - Súgó - Hiba bejelentés menü alatt két pont közül választhatunk:
         1. Autómatikus: Csak a log tartalmát küldi el.
         2. Egyéni: Mi magunk írhatjuk meg mit tapasztaltunk. Ilyenkor nem mellékeli a logot.
+* A program indítható automatikusan a Windowsszal
+    > Fájl - Beállítások - Program indítása a Windowsszal
 
 ## Fejlesztéshez használt programok, kiegészítők
 * [GIMP](https://www.gimp.org/) for used pictures
