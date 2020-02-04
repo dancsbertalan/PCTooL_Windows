@@ -24,6 +24,10 @@ Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak s
 
 > Amennyiben használsz más fajta tűzfalat is elképzelhető, hogy ott is át kell engedni a portot. Akár még a programot is !
 
+## Rendszerigény
+Minimum operációs rendszer: Windows 8
+Minimum .NET verzió: TODO: 
+
 ## Funkciók
 ************
 > A program fő funkciója, hogy a számítógépedet bizonyos műveleteket tudj időzítve végre hajtani. Egyszerre több művelet is elindítható.
@@ -108,14 +112,14 @@ A programot pedig a listábol választhatjuk ki, hasonló elv alapján működve
     > Fájl - Beállítások - Program indítása a Windowsszal
 
 ## Fejlesztéshez használt programok, kiegészítők
-* [GIMP](https://www.gimp.org/) for used pictures
-* [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/) for c# WPF coding
-    * [Dynamic Localization](https://stackoverflow.com/questions/50292087/dynamic-localized-wpf-application-with-resource-files/50292715)
-* [Visual Studio Code](https://code.visualstudio.com/) for readme files
+* [GIMP](https://www.gimp.org/) a használt képekhez
+* [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/) C# WPF kódoláshoz
+    * [Lokalizációhoz](https://stackoverflow.com/questions/50292087/dynamic-localized-wpf-application-with-resource-files/50292715)
+* [Visual Studio Code](https://code.visualstudio.com/) readme fájlokhoz
     * [TODO Highlight extension](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
     * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
-* [SourceTree](https://www.sourcetreeapp.com/) for git repo
-* [Trello](https://trello.com/) for project management
+* [SourceTree](https://www.sourcetreeapp.com/) git kliens a repohoz
+* [Trello](https://trello.com/) a projekt menedzseléséhez
 
 ## Készítők
 ************
