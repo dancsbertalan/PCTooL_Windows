@@ -1,0 +1,9 @@
+## Ignore Visual Studio temp files, builds
+
+# User specific files
+*.suo
+*.user
+
+# Build results
+bin/
+obj/
