@@ -8,3 +8,8 @@
 # Build results
 bin/
 obj/
+
+# Test and report results
+TestResult.*
+coverage.*
+TestReport/
