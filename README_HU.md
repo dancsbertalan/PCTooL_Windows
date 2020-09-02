@@ -5,35 +5,36 @@ Mindezt a [Távirányító API](#taviranyito-api)-val irányíthatjuk a telefonu
 
 ## PCTooL 1.0 - *(Jelenleg fejlesztés alatt)*
 ************
-> A PCTooL 1.0-as verzió - amely a 1.0 branchen lesz elérhető *(csak a forrás kód)* - funkciói<br>
-✔️ - Funkció kész<br>
-❌ - Funkció nincs kész
+> A PCTooL 1.0-as verzió - amely a 1.0 branchen lesz elérhető *(csak a forrás kód)* - funkciói
+
+            ✔️ - Funkció kész
+            ❌ - Funkció nincs kész
 
 - Az értesítési rendszer támogatása *(>Windows 8)*
 - Többnyelvűség *(kezdetben magyar és angol)*
 - Rendszer alapú beállítások kezelése a programhoz
  - Futtatás rendszergazdaként
  - Hibernálás ki/be kapcsolása *rendszergazdai jog szükséges az állításához*
-    > A [tenforums cikkében](https://www.tenforums.com/tutorials/2859-enable-disable-hibernate-windows-10-a.html) található "OPTION THREE" megoldást használva.
+  > A [tenforums cikkében](https://www.tenforums.com/tutorials/2859-enable-disable-hibernate-windows-10-a.html) található "OPTION THREE" megoldást használva.
  - Indítás a windowsszal
    - Indítás a windowsszal minimalizált állapotban
 - Program alapú beálítások
  - Távirányító
-    > Amikor ez be van kapcsolva akkor a program képes fogadni a [Távirányító API](#taviranyito-api) kéréseit, ezzel a program távirányíthatóvá válik. Ehhez készül egy Androidos kliens. 
+  > Amikor ez be van kapcsolva akkor a program képes fogadni a [Távirányító API](#taviranyito-api) kéréseit, ezzel a program távirányíthatóvá válik. Ehhez készül egy Androidos kliens. 
  - Alapértelmezett hangeszköz küldése
-    > Amikor ez be van kapcsolva akkor a Windows hangereje változtathatóvá válik a távirányítóval. valós időben. *(Hálózati sebességtől függően!)*
+  > Amikor ez be van kapcsolva akkor a Windows hangereje változtathatóvá válik a távirányítóval. valós időben. *(Hálózati sebességtől függően!)*
  - Feladatkezelő küldése
-    > Amikor ez be van kapcsolva akkor az éppen futó folyamatokat, programokat és azoknak néhány adatát *(használt CPU, RAM erőforrás)* láthatod és állíthatod le a távirányítóval.
+  > Amikor ez be van kapcsolva akkor az éppen futó folyamatokat, programokat és azoknak néhány adatát *(használt CPU, RAM erőforrás)* láthatod és állíthatod le a távirányítóval.
  - Kilépés a tálcára minimalizál
-    > Az ablak kilépés gombja a kilépés helyett a tálca értesítési ikonjai közé minimalizálja a programot. Újra megnyitható a program innen, ha jobb klikkel rá kattintunk a program ikonjára majd "Megnyitás" menüt választjuk. Itt be is zárhatjuk a programot. Amennyiben a program előtérben van és be szeretnénk zárni a Fájl menüből megtehetjük.
+  > Az ablak kilépés gombja a kilépés helyett a tálca értesítési ikonjai közé minimalizálja a programot. Újra megnyitható a program innen, ha jobb klikkel rá kattintunk a program ikonjára majd "Megnyitás" menüt választjuk. Itt be is zárhatjuk a programot. Amennyiben a program előtérben van és be szeretnénk zárni a Fájl menüből megtehetjük.
 - Automatikus hibajelentés
-    > A program automatikus hiba jelentéseket küldhet a fejlesztő(k)nek, ha bekapcsolod ezt. Ehhez a [Sentry](www.sentry.io)-t használja.
+ > A program automatikus hiba jelentéseket küldhet a fejlesztő(k)nek, ha bekapcsolod ezt. Ehhez a [Sentry](www.sentry.io)-t használja.
 - Saját műveletek *(Időzíthető)*
  - Alapértelmezett hangeszköz hangerejének állítása
  - Program hangerejének állítása
  - Egy adott fájl futtatása
  - Egy adott folyamat leállítása
-    > Egy adott folyamat, program leállítása. Itt mi magunk választjuk ki, hogy melyik folyamatot szeretnénk bezárni, ezt egy "folyamat választó" nézetből tehetjük meg.
+  > Egy adott folyamat, program leállítása. Itt mi magunk választjuk ki, hogy melyik folyamatot szeretnénk bezárni, ezt egy "folyamat választó" nézetből tehetjük meg.
 - Azonnali futtatása egy adott műveletnek *(egyéni/beépített)*
 - Időzített futtatása egy adott műveletnek *(egyéni/beépített)*
 
@@ -81,7 +82,7 @@ Egy GIF ami segít eligazodni, ha a fenti leírás nem elég:
 - [Futtatás rendszergazdaként *(option eleven)*](https://www.tenforums.com/tutorials/3436-run-administrator-windows-10-a.html)
 - [Hibernálás ki/bekapcsolása *(option three)*](https://www.tenforums.com/tutorials/2859-enable-disable-hibernate-windows-10-a.html)
 - [NotifyTask class](https://github.com/StephenCleary/Mvvm.Async/blob/master/src/Nito.Mvvm.Async/NotifyTask.cs)
-    > Ha valamit akarunk csinálni amikor egy Task kész van, hibát dobott vagy bezártuk.
+> Ha valamit akarunk csinálni amikor egy Task kész van, hibát dobott vagy bezártuk.
 
 ### Egyéb szolgáltatások
 - [Trello](https://trello.com)
