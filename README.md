@@ -5,8 +5,8 @@ We can remote this app with the [Remote API](#remote-api).
 
 ## PCTooL 1.0 - *(Under development)*
 ************
-> PCTooL 1.0 - will be avilable on **1.0 branch** - features
-✔️ - Function completed
+> PCTooL 1.0 - will be avilable on **1.0 branch** *(only source code)* - features<br>
+✔️ - Function completed<br>
 ❌ - Function not completed
 
 - Notification system supported *(>Windows 8)*
@@ -14,37 +14,36 @@ We can remote this app with the [Remote API](#remote-api).
 - System based settings for program
  - Run as Administrator
  - Hibernate on/off *admin rights required*
-  > For this feature used this [tenforums article](https://www.tenforums.com/tutorials/2859-enable-disable-hibernate-windows-10-a.html) "OPTION THREE".
+    > For this feature used this [tenforums article](https://www.tenforums.com/tutorials/2859-enable-disable-hibernate-windows-10-a.html) "OPTION THREE"
  - Run with Windows
    - Run with Windows minimized
 - Program based settings
  - Remote
-  > When this function turned on then program can receive [Remote API](#remote-api) requests, so this remotely controllable. For remote this app I create a Android client.
+    > When this function turned on then program can receive [Remote API](#remote-api) requests, so this remotely controllable. For remote this app I create a Android client.
  - Default sound device sending
-  > When this turned on then Windows volume can change with remote in real time. *(Depends on your network speed!)*
+    > When this turned on then Windows volume can change with remote in real time. *(Depends on your network speed!)*
  - Process Manager sending
-  > When this turned on then can see,kill currently running process and their some data.
+    > When this turned on then can see,kill currently running process and their some data.
  - Exit minimize to tray
-  > When you click on "red cross" at right top minimize app to tray instead of close. You can close this app from "File" menu option.
+    > When you click on "red cross" at right top minimize app to tray instead of close. You can close this app from "File" menu option.
 - Automatic bugreport
-> The program can send automatic error reports to the developer(s) if you enable it. To do this, program use [Sentry API](sentry.io/).
+    > The program can send automatic error reports to the developer(s) if you enable it. To do this, program use [Sentry API](sentry.io/).
 - Custom tasks *(Available timer function)*
  - Default sound device volume change
  - Program volume change
  - Run a file
  - Kill a process
-  > One selected process, program kill. We can select process from "Process selector" view.
+    > One selected process, program kill. We can select process from "Process selector" view.
 - Run a specific task immediately *(custom/built-in)*
 - Scheduled run of a specific task *(custom/built-in)*
 
 ## Remote API *(Under planning)*
 ************
-> Remote API requests and their responses.
-**Currently under planning!**
+> Remote API requests and their responses. **Currently under planning!**
 
 ## Installation
 ************
-Download PCTooL_X.X-installer.exe from **installer** branch and follow installer instructions.
+Download PCTooL_X.X-installer.exe from **installers** branch and follow installer instructions.
 
 The [Remote API](#remote-api) requires the **65400 TCP** port to be enabled in Windows Firewall. When the program installing then automatically added this port to firewall, if not you can do it with these instructions:
 
@@ -84,7 +83,7 @@ This GIF maybe helps for you, if these instructions is not enough:
 - [Run as Admin *(option eleven)*](https://www.tenforums.com/tutorials/3436-run-administrator-windows-10-a.html)
 - [Hibernate on/off *(option three)*](https://www.tenforums.com/tutorials/2859-enable-disable-hibernate-windows-10-a.html)
 - [NotifyTask class](https://github.com/StephenCleary/Mvvm.Async/blob/master/src/Nito.Mvvm.Async/NotifyTask.cs)
-> If we want to do something when a Task is ready, we have thrown an error or closed it.
+    > If we want to do something when a Task is ready, we have thrown an error or closed it.
 
 ### Another services
 - [Trello](https://trello.com)
@@ -115,5 +114,4 @@ Dancs Bertalan
 
 ## License
 ************
-
 #TODO
