@@ -1,131 +1,119 @@
-# **PCTool - Windows kliens**
-> Egy olyan számítógépes eszköz mely sok olyan funkciót is tartalmaz, amelyet telefonon keresztül irányíthatunk az ehhez készült alkalmazással *TODO: LINK*. 
+# **PCTool - Windows client**
+************
+> This is a program which you can automate some tasks on your computer. These tasks has two type: built-in(e.g.:shutdown, reboot, sleep etc.) [custom](#custom-tasks)(run file. kill a process etc). Your custom tasks can be saved.
+We can remote this app with the [Remote API](#remote-api).
 
-## Telepítés
+## PCTooL 1.0 - *(Under development)*
+************
+> PCTooL 1.0 - will be avilable on **1.0 branch** - features
+✔️ - Function completed
+❌ - Function not completed
+
+- Notification system supported *(>Windows 8)*
+- Multi language *(initially available english and hungarian)*
+- System based settings for program
+ - Run as Administrator
+ - Hibernate on/off *admin rights required*
+  > For this feature used this [tenforums article](https://www.tenforums.com/tutorials/2859-enable-disable-hibernate-windows-10-a.html) "OPTION THREE".
+ - Run with Windows
+   - Run with Windows minimized
+- Program based settings
+ - Remote
+  > When this function turned on then program can receive [Remote API](#remote-api) requests, so this remotely controllable. For remote this app I create a Android client.
+ - Default sound device sending
+  > When this turned on then Windows volume can change with remote in real time. *(Depends on your network speed!)*
+ - Process Manager sending
+  > When this turned on then can see,kill currently running process and their some data.
+ - Exit minimize to tray
+  > When you click on "red cross" at right top minimize app to tray instead of close. You can close this app from "File" menu option.
+- Automatic bugreport
+> The program can send automatic error reports to the developer(s) if you enable it. To do this, program use [Sentry API](sentry.io/).
+- Custom tasks *(Available timer function)*
+ - Default sound device volume change
+ - Program volume change
+ - Run a file
+ - Kill a process
+  > One selected process, program kill. We can select process from "Process selector" view.
+- Run a specific task immediately *(custom/built-in)*
+- Scheduled run of a specific task *(custom/built-in)*
+
+## Remote API *(Under planning)*
+************
+> Remote API requests and their responses.
+**Currently under planning!**
+
+## Installation
+************
+Download PCTooL_X.X-installer.exe from **installer** branch and follow installer instructions.
+
+The [Remote API](#remote-api) requires the **65400 TCP** port to be enabled in Windows Firewall. When the program installing then automatically added this port to firewall, if not you can do it with these instructions:
+
+1. Search in Start menu **Windows Defender Firewall with Advanced Security**
+2. Select **Inbound rules** at the left side menu column
+3. Select **New Rule...** at the right side menu column
+4. In New Inbound Rule Wizard follow these instructions:
+    1. Rule Type: **Port**
+    2. Select **TCP** port, select **Specific local ports:** add this **65400**
+    port to text field
+    3. Action: **Allow the connection**
+    4. You can change profile optionally
+    5. Name: What you want ;) For the sake of transparency: PCTool *(If the installer has successfully added the port to the list, you will find it under this name!)*
+
+This GIF maybe helps for you, if these instructions is not enough:
+![](Firewall_EN.gif)
+
+*Not recommended solution is [Disable Windows Firewall](https://support.microsoft.com/en-us/help/4028544/windows-10-turn-microsoft-defender-firewall-on-or-off)*
+
+**Importat** if you use another firewall maybe need allow this port in firewall.
+*I tested with Comodo Internet Security and with this not need allow this port.*
+
+## Resources for development
 ************
 
-Letöltöd a **PCTool.exe**-t az **installer** branchről. *(TODO: Vagy erről a linkről)* A telepítő utasításaid követve felrakod.
+### Programs
+- [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Gimp](https://www.gimp.org/)
+- [Sourcetree](https://www.sourcetreeapp.com/)
+- [Meld](https://meldmerge.org/)
+- [Trello app](https://www.microsoft.com/store/productId/9NBLGGH4XXVW)
 
-### A port engedélyezése
-> Ahhoz, hogy a program tudjon kommunikálni a telefonos alkalmazással szükséges engedélyezni a *7171* portot a Windows tűzfalban. *Vagy azt kikapcsolni, bár ezt nem javaslom.*
-Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az itt leírtak szerint tudod engedélyezni / ellenőrizni.
+### Articles, guides, repos
+- [Localization](https://stackoverflow.com/questions/50292087/dynamic-localized-wpf-application-with-resource-files/50292715)
+- [Support Windows 10 notification system](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DesktopToasts/CS)
+- [Run as Admin *(option eleven)*](https://www.tenforums.com/tutorials/3436-run-administrator-windows-10-a.html)
+- [Hibernate on/off *(option three)*](https://www.tenforums.com/tutorials/2859-enable-disable-hibernate-windows-10-a.html)
+- [NotifyTask class](https://github.com/StephenCleary/Mvvm.Async/blob/master/src/Nito.Mvvm.Async/NotifyTask.cs)
+> If we want to do something when a Task is ready, we have thrown an error or closed it.
 
-1. Windows keresőben megkeresed a **Fokozott biztonságú Windows Defender tűzfal**
-2. Baloldali menü oszlopban kiválasztod a **Bejövő szabályok** pontot
-3. Jobb oldali menü oszlopban kiválasztod a **Új szabály...** pontot
-4. A varázslóban az alábbiak szerint jársz el:
-    1. Szabály típusa: **Port**
-    2. **TCP** protokoll legyen kipipálva, **Adott helyi portok:** legyen kipipálva majd ott add meg az alábbi portot: **7171**
-    3. Művelet: **Engedélyezze a kapcsolatot**
-    4. Profil opcionálisan állítható
-    5. Név: Amit Te szeretnél, átlathatóság kedvéért: PCTool *(Amennyiben a telepítő sikeresen hozzá adta a portot a listához ezen a néven találod meg!)*
+### Another services
+- [Trello](https://trello.com)
+- [Bitbucket](https://bitbucket.org)
+- [Sentry](sentry.io/)
 
-![](Firewall_HU.gif)
+### Libs, nugets
+- [Mahapps.Metro](https://mahapps.com/)
+- [Test Generator NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+- [NUnit3](https://nunit.org/)
+- [NUnit3TestAdapter](https://github.com/nunit/nunit3-vs-adapter)
+- [NUnit.ConsoleRunner](https://www.nuget.org/packages/NUnit.ConsoleRunner/)
+- [MahApps.Metro](https://mahapps.com/)
+- [Moq](https://github.com/moq/moq4)
+- [Newtonsoft.Json](https://www.newtonsoft.com/json)
+- [Ninject](http://www.ninject.org/download.html)
+- [NotifyIcon for WPF](http://www.hardcodet.net/wpf-notifyicon)
+- [NLog](https://nlog-project.org/)
+- [Sentry](https://www.nuget.org/packages/Sentry)
+- [Sentry.NLog](https://www.nuget.org/packages/Sentry.NLog/)
+- [OpenCover](https://www.nuget.org/packages/OpenCover/)
+- [ReportGenerator](https://www.nuget.org/packages/ReportGenerator/)
+- [TaskScheduler](https://www.nuget.org/packages/TaskScheduler)
 
-> Amennyiben használsz más fajta tűzfalat is elképzelhető, hogy ott is át kell engedni a portot. Akár még a programot is !
-
-## Rendszerigény
-Minimum operációs rendszer: Windows 8
-Minimum .NET verzió: TODO: 
-
-## Funkciók
-************
-> A program fő funkciója, hogy a számítógépedet bizonyos műveleteket tudj időzítve végre hajtani. Egyszerre több művelet is elindítható.
-
-### Végrehajtható műveletek
-
-1. Kikapcsolás
-2. Újraindítás
-3. Alvás
-4. Lezárás
-5. Hibernálás *(Ha a gépeden engedélyezett!)*
-    > Fájl - Beállítások - Hibernálás menüpontban ki/be kacsolható
-6. Kijelentkezés
-7. Saját művelet
-    * Adott futtatható fájl futtatása *(Tallózással választva)*
-    * Adott folyamat leállítása *(Feladatkezelőből választott)*
-    * Az alapértelmezett hangeszköz hangerejének változtatása
-    * Egy adott alkalmazás hangjának az állítása 
-
-A program képes értesítést küldeni a következő műveletről. Ez a windows beállításaiban ki/be kapcsolható.
-Küld egy értesítés ha hátralevő idő:
-* 5 perc
-* 1 perc
-
-### Távirányíthatóság
-
-Ahhoz, hogy a program távirányítható legyen az alábbiak szükségesek:
-
-* **Rendszergazdaként futtatni a programot** *(Jobb klikk - futtatás rendszergazdaként, vagy beállítani, hogy mindig rendszergazdaként futtassuk: Jobb klikk - Tulajdonságok - Kompatibilitás - Program futtatása rendszergazdaként opció kipipálása majd alkalmazása)*
-Vagy bekapcsolható a Fájl - Beállítások - Rendszergadaként való futtatás menüpont alatt.
-* **Ugyanazon a hálózathoz** *(internet nem szükséges)* **legyen csatlakoztatva a két eszköz**
-* Fájl - Beállítások - Távirányító - **Távirányíthatóság funkció ki legyen pipálva** a kliensben
-
-    > Amint engedélyezzük a távirányíthatóságot két helyzetet különböztetünk meg:
-    > 1. Amennyiben 1 hálózatra vagyunk csak csatlakozva akkor a menüsor jobb oldalán megjelenik az IP cím amelyen keresztül leszünk elérhetőek.
-    > 2. Amennyiben több hálózatra vagyunk csatlakozva a gépünkkel megjelenik egy ablak ahol kiválaszthatjuk azt a címet melyen szeretnénk elérhetővé tenni a gépünket. 
-
-#### Távirányíthatóság funkciói 
-TODO: API hívások
-
-* Adott végrehajtható műveletek listázása
-* Végrehajtható művelet indítása
-* Jelenleg futó művelet leállítása
-* Jelenleg futó műveletek listázása
-* A jelenleg futó folyamatok lekérése *(feladatkezelő)*
-    * Adott folyamat leállítása (realtime módon - nem időzett)
-    
-        > Fájl - Beállítások - **Feladatkezelő küldése** menüpontban állítható.   
-        
-* Az alapértelmezett hangeszköz hangerejének állítása, realtime (nem időzített) módon
-
-    > Fájl - Beállítások - **Alapértelmezett hangeszköz küldése** menüpontban állítható.
-
-### Saját művelet készítése
-A programban saját műveleteket is definiálhatunk. Az ehhez szükséges gombot a *Futtatható műveletek* lista legalján találjuk meg egy + jel formájában.
-Felugró ablakban adunk neki egy nevet, majd egy típust az alábbiak közül:
-
-#### Adott fájl futtatása
-Tallózással kiválasztunk egy fájlt, melyet a program megnyit amennyiben a fájlhoz van társítva kezelő program.
-
-#### Adott folyamat leállítása
-Kiválasztunk a listából egy folyamatot amelyiket le szeretnénk állítani. Ezek a folyamatok megegyeznek a feladatkezelő folyamatival.
->Fontos, hogy ilyenkor a program a folyamat nevét tárolja, nem a folyamatazonosítóját, ugyanis az minden indításkor más számot kap.
-
-#### Alapértelmezett hangeszköz hangerejének állítása
-Egy sliderrel megadhatjuk, hogy mennyire állítsa majd az alapértelmezett hangeszköz hangerejét.
-
-#### Egy adott alkalmazás hangjának az állítása 
-Egy sliderrel megadjuk, hogy mennyire állítsa majd az adott programnak a hangját.
-A programot pedig a listábol választhatjuk ki, hasonló elv alapján működve mint az *Adott folyamat leállítása* funkciónál volt leírva.
-
-### Egyéb
-* A tálcán megjelenő ikonra való minimializálás az exit gombbal be/ki kapcsolható
-    > Fájl - Beállítások - Minimializálás a tálcára az exittel
-* Több nyelvűség támogatása
-    > Fájl - Beállítások - Nyelv menü pont alatt látható nyelvekkel *(kezdetben angol és magyar)*
-* Hibabejelentés küldhető
-    > Fájl - Súgó - Hiba bejelentés menü alatt két pont közül választhatunk:
-        1. Autómatikus: Csak a log tartalmát küldi el.
-        2. Egyéni: Mi magunk írhatjuk meg mit tapasztaltunk. Ilyenkor nem mellékeli a logot.
-* A program indítható automatikusan a Windowsszal
-    > Fájl - Beállítások - Program indítása a Windowsszal
-
-## Fejlesztéshez használt programok, kiegészítők
-* [GIMP](https://www.gimp.org/) a használt képekhez
-* [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/) C# WPF kódoláshoz
-    * [Lokalizációhoz](https://stackoverflow.com/questions/50292087/dynamic-localized-wpf-application-with-resource-files/50292715)
-* [Visual Studio Code](https://code.visualstudio.com/) readme fájlokhoz
-    * [TODO Highlight extension](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
-    * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
-* [SourceTree](https://www.sourcetreeapp.com/) git kliens a repohoz
-* [Trello](https://trello.com/) a projekt menedzseléséhez
-
-## Készítők
+## Developer
 ************
 Dancs Bertalan 
 
-## Licensz
+## License
 ************
 
-TODO: Milyen licenszek érvényesek ??
+#TODO
