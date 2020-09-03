@@ -1,3 +1,6 @@
+- [Hungarian readme](README_HU.md)
+- [English readme](README.md)
+
 # **PCTool - Windows client**
 ************
 > This is a program which you can automate some tasks on your computer. These tasks has two type: built-in(e.g.:shutdown, reboot, sleep etc.) [custom](#custom-tasks)(run file. kill a process etc). Your custom tasks can be saved.
@@ -5,6 +8,7 @@ We can remote this app with the [Remote API](#remote-api).
 
 ## PCTooL 1.0 - *(Under development)*
 ************
+You can follow development in **develop** branch.
 > PCTooL 1.0 - will be avilable on **1.0 branch** *(only source code)* - features
         
             ✔️ - Function completed

@@ -1,3 +1,5 @@
+- [Magyar olvass el](README_HU.md)
+- [Angol olvass el](README.md)
 # **PCTool - Windows kliens**
 ************
 > Egy olyan program mellyel a számítógépünkön automatizálhatunk különféle műveleteket(un.: taskokat). Ezek lehetnek beépítettek (kikapcsolás, újraindítás .... stb) vagy sajátok (adott fájl futtatása, hangerő állítás.... [Saját műveletek](#sajat-muveletek)), amelyek menthetőek későbbre.
@@ -5,6 +7,7 @@ Mindezt a [Távirányító API](#taviranyito-api)-val irányíthatjuk a telefonu
 
 ## PCTooL 1.0 - *(Jelenleg fejlesztés alatt)*
 ************
+A fejlesztést követheted a **develop** branchen.
 > A PCTooL 1.0-as verzió - amely a 1.0 branchen lesz elérhető *(csak a forrás kód)* - funkciói
 
             ✔️ - Funkció kész
