@@ -26,7 +26,7 @@ You can follow development in **develop** branch.
  - Remote
   > When this function turned on then program can receive [Remote API](#remote-api) requests, so this remotely controllable. For remote this app I create a Android client.
  - Default sound device sending
-  > When this turned on then Windows volume can change with remote in real time. *(Depends on your network speed!)*
+  > When this turned on then Windows volume can change with remote in real time. *(Depends on your network speed.)*
  - Process Manager sending
   > When this turned on then can see,kill currently running process and their some data.
  - Exit minimize to tray

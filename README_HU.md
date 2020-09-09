@@ -25,7 +25,7 @@ A fejlesztést követheted a **develop** branchen.
  - Távirányító
   > Amikor ez be van kapcsolva akkor a program képes fogadni a [Távirányító API](#taviranyito-api) kéréseit, ezzel a program távirányíthatóvá válik. Ehhez készül egy Androidos kliens. 
  - Alapértelmezett hangeszköz küldése
-  > Amikor ez be van kapcsolva akkor a Windows hangereje változtathatóvá válik a távirányítóval. valós időben. *(Hálózati sebességtől függően!)*
+  > Amikor ez be van kapcsolva akkor a Windows hangereje változtathatóvá válik a távirányítóval. valós időben. *(Hálózati sebességtől függően.)*
  - Feladatkezelő küldése
   > Amikor ez be van kapcsolva akkor az éppen futó folyamatokat, programokat és azoknak néhány adatát *(használt CPU, RAM erőforrás)* láthatod és állíthatod le a távirányítóval.
  - Kilépés a tálcára minimalizál
