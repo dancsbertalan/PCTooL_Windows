@@ -13,7 +13,7 @@ A fejlesztést követheted a **develop** branchen.
             ✔️ - Funkció kész
             ❌ - Funkció nincs kész
 
-- Az értesítési rendszer támogatása *(>Windows 8)*
+- Az értesítési rendszer támogatása *(Csak Windows 10)*
 - Többnyelvűség *(kezdetben magyar és angol)*
 - Rendszer alapú beállítások kezelése a programhoz
  - Futtatás rendszergazdaként
@@ -47,7 +47,17 @@ A fejlesztést követheted a **develop** branchen.
 
 ## Telepítés
 ************
-Letöltöd az **installers** branchen található PCTooLX.X-installer.exe-t és a telepítő utasításait követve felrakod.
+<details>
+  <summary>Követelmények</summary>
+
+  ```
+  - Operációs rendszer: Windows 8 vagy nagyobb
+    > Windows 8 vagy 8.1 alatt az értesítések nem működnek.
+  - .NET Framework: .NET Framework 4.6 vagy nagyobb
+  ```
+</details>
+
+Letöltöd a PCTooL_X.X-installer.exe-t a **releases** oldalról majd követed a telepítő instrukcióit.
 
 A [Távirányító API](#taviranyito-api) működéséhez szükséges a Windows Tűzfalban a **65400 TCP** port engedélyezése.  Ezt a program a telepítéskor megcsinálja. Amennyiben mégse az alábbi leírást követve tudod megtenni manuálisan:
 

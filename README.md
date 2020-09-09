@@ -14,7 +14,7 @@ You can follow development in **develop** branch.
             ✔️ - Function completed
             ❌ - Function not completed
 
-- Notification system supported *(>Windows 8)*
+- Notification system supported *(Only Windows 10)*
 - Multi language *(initially available english and hungarian)*
 - System based settings for program
  - Run as Administrator
@@ -48,7 +48,17 @@ You can follow development in **develop** branch.
 
 ## Installation
 ************
-Download PCTooL_X.X-installer.exe from **installers** branch and follow installer instructions.
+<details>
+  <summary>Requirements</summary>
+
+  ```
+  - Operation System: Windows 8 or higher
+    > Under Windows 8 or 8.1 notifications are not working.
+  - .NET Framework: .NET Framework 4.6 or higher
+  ```
+</details>
+
+Download PCTooL_X.X-installer.exe from **realeases** follow installer instructions.
 
 The [Remote API](#remote-api) requires the **65400 TCP** port to be enabled in Windows Firewall. When the program installing then automatically added this port to firewall, if not you can do it with these instructions:
 
