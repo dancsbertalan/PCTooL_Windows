@@ -13,3 +13,6 @@ obj/
 TestResult.*
 coverage.*
 TestReport/
+
+# Some code which denied to repo
+PCTooL/PCTooL/Helpers/Ignorables.cs

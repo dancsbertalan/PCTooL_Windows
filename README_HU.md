@@ -53,7 +53,7 @@ A fejlesztést követheted a **develop** branchen.
   ```
   - Operációs rendszer: Windows 8 vagy nagyobb
     > Windows 8 vagy 8.1 alatt az értesítések nem működnek.
-  - .NET Framework: .NET Framework 4.6 vagy nagyobb
+  - .NET Framework: .NET Framework 4.6.1 vagy nagyobb
   ```
 </details>
 

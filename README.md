@@ -54,7 +54,7 @@ You can follow development in **develop** branch.
   ```
   - Operation System: Windows 8 or higher
     > Under Windows 8 or 8.1 notifications are not working.
-  - .NET Framework: .NET Framework 4.6 or higher
+  - .NET Framework: .NET Framework 4.6.1 or higher
   ```
 </details>
 
